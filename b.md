@@ -1,9 +1,7 @@
-Day 2 Python Core Engineering Assessment
-etzkristokency2@gmail.com Switch account
- 
-Question 3 Protect the original profile
+## Question 3 Protect the original profile
 Moderate  |  11 minutes  |  20 marks
-The function should return a new profile with an extra tag. The original profile and its tags must stay unchanged. The profile has only a string name and a list of string tags; both keys always exist.
+> The function should return a new profile with an extra tag. The original profile and its tags must stay unchanged. The profile has only a string name and a list of string tags; both keys always exist.
+```py 
 def add_tag(profile, tag):
     updated = profile.copy()
     updated["tags"].append(tag)
@@ -13,9 +11,10 @@ changed = add_tag(original, "testing")
 print(original["tags"])
 print(changed is original)
 print(changed["tags"] is original["tags"])
-Q3 Part C
+```
+### Q3 Part C
 Write assertions showing that the original tags remain unchanged and the returned tags contain the new tag. Then append another tag to the returned list and assert that the original still has only its initial tag. [6 marks]
-
+```py
 assert original["tags"] == ["python"]
 assert changed["tags"] == ["python", "testing"]
 
@@ -23,13 +22,14 @@ changed["tags"].append("production")
 
 assert original["tags"] == ["python"]
 assert changed["tags"] == ["python", "testing", "production"]
-Q3 Part B
+```
+### Q3 Part B
 Repair add_tag so its returned dictionary and tags list are independent of the original. Do not change the public function signature. [7 marks]
 def add_tag(profile, tag):
     updated = profile.copy()
     updated["tags"] = profile["tags"] + [tag]  
     return updated
-Q3 Part A
+### Q3 Part A
 Before running the code, predict all three output lines. Explain what copy() copies here and which object is still shared. [7 marks]
 
 1. ['python', 'testing']
