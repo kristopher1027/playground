@@ -25,10 +25,12 @@ assert changed["tags"] == ["python", "testing", "production"]
 ```
 ### Q3 Part B
 Repair add_tag so its returned dictionary and tags list are independent of the original. Do not change the public function signature. [7 marks]
+```py
 def add_tag(profile, tag):
     updated = profile.copy()
     updated["tags"] = profile["tags"] + [tag]  
     return updated
+```
 ### Q3 Part A
 Before running the code, predict all three output lines. Explain what copy() copies here and which object is still shared. [7 marks]
 
