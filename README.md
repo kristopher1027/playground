@@ -58,4 +58,3 @@ Never submit passwords through Google Forms.
 This content is neither created nor endorsed by Google. - Contact form owner - Terms of Service - Privacy Policy
 Does this form look suspicious? Report
 
-Google Forms
