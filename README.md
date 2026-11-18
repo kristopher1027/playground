@@ -2,7 +2,7 @@
 Advanced Python Solo Assessment (4 Hours)
 etzkristokency2@gmail.com Switch account
  
-Draft saved
+
 * Indicates required question
 PART A — Three-hour solo project (70 marks)
 Duration: 180 minutes. Build a command-line Campus Resource Management System in Python. Complete the required demonstration.
